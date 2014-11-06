@@ -777,6 +777,8 @@ namespace Microsoft.Azure.DocumentDBStudio
             }
             else if (this.resourceType == ResourceType.Document)
             {
+                this.Nodes.Add(new TreeNode("Fake"));
+
                 this.contextMenu.MenuItems.Add("-");
 
                 MenuItem myMenuItem3 = new MenuItem("Add attachment");
